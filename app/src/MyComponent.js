@@ -4,7 +4,7 @@ import logo from "./logo.png";
 
 const { AccountData, ContractData, ContractForm } = newContextComponents;
 
-export default ({ drizzle, drizzleState }) => {
+export default function MyComponent({ drizzle, drizzleState }) {
   // destructure drizzle and drizzleState from props
   return (
     <div className="App">
