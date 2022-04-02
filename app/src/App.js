@@ -1,25 +1,14 @@
-import React from "react";
-import { DrizzleContext } from "@drizzle/react-plugin";
-import { Drizzle } from "@drizzle/store";
-import UserInfo from "./components/UserInfo";
-
-import Web3 from "web3";
-import RooibosDao from "./contracts/RooibosDao.json";
-
 import "./App.css";
 
-const options = {
-  web3: {
-    block: false,
-    customProvider: new Web3("ws://localhost:8545"),
-  },
-  contracts: [RooibosDao],
-  events: {
-    RooibosDao: [], // TODO: populate when we have events
-  },
-};
+import React from "react";
+import { Drizzle } from "@drizzle/store";
+import { DrizzleContext } from "@drizzle/react-plugin";
 
-const drizzle = new Drizzle(options);
+import UserInfo from "./components/UserInfo";
+import drizzleOptions from "./drizzleOptions";
+import drizzleStore from "./drizzleStore";
+
+const drizzle = new Drizzle(drizzleOptions, drizzleStore);
 
 const App = () => {
   return (

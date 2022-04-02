@@ -34,6 +34,7 @@ contract RooibosDao is AccessControl {
     function makeProposer(address account) external onlyAdmin {
         if (!hasRole(PROPOSER_ROLE, account)) {
             _setupRole(PROPOSER_ROLE, account);
+
         }
     }
 }
