@@ -1,0 +1,29 @@
+name: Contribution Workflow
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install node v13
+        uses: actions/setup-node@v3
+        with:
+          node-version: "13"
+      - name: Install npm dependencies
+        run: |
+          npm ci
+          cd app && npm ci && cd -
+      - name: Compile solidity contracts
+        run: |
+          npx truffle compile
+      - name: Run tests
+        run: |
+          npx truffle test
+          cd app && npm run test && cd -
+

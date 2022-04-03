@@ -5,8 +5,8 @@ import "@openzeppelin/contracts/access/AccessControl.sol";
 
 contract RooibosDao is AccessControl {
     address public admin;
-    bytes32 public constant PROPOSER_ROLE = keccak256("PROPOSER");
     bytes32 public constant VOTER_ROLE = keccak256("VOTER");
+    bytes32 public constant PROPOSER_ROLE = keccak256("PROPOSER");
 
     constructor() {
         admin = msg.sender;
