@@ -102,9 +102,6 @@ You can now view app in the browser.
 
   Local:            http://localhost:3000
   On Your Network:  http://10.0.0.12:3000
-
-Note that the development build is not optimized.
-To create a production build, use yarn build.
 ```
 
 Opening the link will take you to a local version of the app that automatically connects to your local blockchain.

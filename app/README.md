@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This directory contains the front-end code for the RooibosDAO project. See the [parent readme](../README.md) for instructions on how to install everything.
+
 
 ## Available Scripts
 
-In the project directory, you can run:
+See the [package.json](package.json) for the full list of available `npm` scripts.
 
-### `yarn start`
+### `npm run start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Compiles and serves the app in development mode. Supports hot reloading, so any changes you make to the app will reflect immediately if they compile. Note that you will not be able to interact with any contracts unless you have deployed them to a local blockchain - see the [parent readme](../README.md) for details.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```sh
+$ npm run start
 
-### `yarn test`
+Compiled successfully!
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You can now view app in the browser.
 
-### `yarn build`
+  Local:            http://localhost:3000
+  On Your Network:  http://10.0.0.12:3000
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### `npm run test`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Runs the front-end tests in interactive watch mode.
 
-### `yarn eject`
+```
+$ npm run test
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+No tests found related to files changed since last commit.
+Press `a` to run all tests, or run Jest with `--watchAll`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Watch Usage
+ › Press a to run all tests.
+ › Press f to run only failed tests.
+ › Press q to quit watch mode.
+ › Press p to filter by a filename regex pattern.
+ › Press t to filter by a test name regex pattern.
+ › Press Enter to trigger a test run.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### `npm run build`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Compiles and builds a production version of the app to the `build/` folder. Currently optimises and minifies the resulting build.
 
-## Learn More
+```sh
+$ npm run build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Creating an optimized production build...
+Compiled successfully.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+File sizes after gzip:
 
-### Code Splitting
+  739.11 KB (+5.13 KB)  build/static/js/2.ef8f9abe.chunk.js
+  21.79 KB (+316 B)     build/static/js/main.637348db.chunk.js
+  765 B                 build/static/js/runtime-main.daa81fa3.js
+  333 B                 build/static/css/main.a9672cbc.chunk.css
+```
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Notes for Development
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The app was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), which hides a lot of the development dependencies under `react-scripts`. If we need to customise some aspect of the build process later we can call `npm run eject` to unfold all of the development dependencies so that we can manage them ourselves. Let's avoid that for as long as possible.
