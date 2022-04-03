@@ -18,6 +18,7 @@
       <li><a href="#prerequisites">Prerequisites</a></li>
       <li><a href="#installation">Installation</a></li>
       <li><a href="#running-locally">Running Locally</a></li>
+      <li><a href="#running-tests-locally">Running Tests Locally</a></li>
     </ul>
   </li>
   <li><a href="#roadmap">Roadmap</a></li>
@@ -105,6 +106,23 @@ You can now view app in the browser.
 ```
 
 Opening the link will take you to a local version of the app that automatically connects to your local blockchain.
+
+### Running Tests Locally
+
+To run the contract tests in the `test/` directory, use `npx truffle test`. This will compile the contracts and run the test scripts against a local development blockchain.
+
+```sh
+$ npx truffle test
+
+Using network 'test'.
+
+TestRooibosDao
+    ✓ testNonZeroAdmin (1093ms)
+
+  Contract: RooibosDao
+    ✓ ...should have non-zero admin address. (66ms)
+```
+
 
 ## Roadmap
 
