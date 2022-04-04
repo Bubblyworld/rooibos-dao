@@ -1,6 +1,11 @@
 This directory contains the front-end code for the RooibosDAO project. See the [parent readme](../README.md) for instructions on how to install everything.
 
 
+## Interacting with the Web App
+
+The web app connects to a blockchain using an injected `web3` instance. This is provided by browser extensions like [metamask](https://metamask.io/) - in order to test and interact with the app in your browser, you will need to install one of these extensions and configure an account.
+
+
 ## Available Scripts
 
 See the [package.json](package.json) for the full list of available `npm` scripts.

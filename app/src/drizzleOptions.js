@@ -5,7 +5,7 @@ import RooibosDao from "./contracts/RooibosDao.json";
 const drizzleOptions = {
   web3: {
     block: false,
-    customProvider: new Web3("ws://localhost:7545"),
+    customProvider: new Web3(Web3.givenProvider),
   },
   contracts: [RooibosDao],
   events: {
