@@ -9,9 +9,9 @@ import "../contracts/RooibosDao.sol";
 contract TestRooibosDao {
     function testNonZeroAdmin() public {
         RooibosDao rooibosDao = RooibosDao(DeployedAddresses.RooibosDao());
-        uint160 adminAddr = uint160(rooibosDao.admin());
+        uint160 admin = uint160(rooibosDao.admin());
 
-        Assert.notEqual(adminAddr, 0, "Admin address should be non-zero.");
+        Assert.notEqual(admin, 0, "Admin address should be non-zero.");
     }
 }
 
