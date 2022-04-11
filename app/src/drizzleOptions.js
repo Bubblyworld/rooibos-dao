@@ -9,7 +9,7 @@ const drizzleOptions = {
   },
   contracts: [RooibosDao],
   events: {
-    RooibosDao: ["RoleGranted"], // TODO: populate when we have events
+    RooibosDao: [], // TODO: populate when we have events
   },
 };
 
