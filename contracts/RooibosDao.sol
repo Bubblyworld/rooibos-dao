@@ -35,6 +35,9 @@ contract RooibosDao is Initializable, GovernorUpgradeable,
         __GovernorVotesQuorumFraction_init(4); // 4% required for quorum
     }
 
+    // Function for creating proposal
+    // Function for adjusting quorum fraction
+
     /******************
      **  OVERRIDES:  **
      ******************/
