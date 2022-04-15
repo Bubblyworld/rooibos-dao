@@ -4,3 +4,4 @@ app/src/contracts
 .DS_Store
 .openzeppelin
 contracts/artifacts/
+.deps/

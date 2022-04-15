@@ -25,11 +25,9 @@
   <li><a href="#contact">Contact</a></li>
 </ol>
 
-
 ## About The Project
 
 Contract and front-end code for the RooibosDAO project. More to say about this soon.
-
 
 ## Getting Started
 
@@ -57,7 +55,7 @@ Next, you will need to clone the project and install its dependencies:
    $ cd app
    $ npm install
    ```
-   
+
 ### Running Locally
 
 To set up a local development blockchain, run `npx truffle dev`:
@@ -123,11 +121,9 @@ TestRooibosDao
     ✓ ...should have non-zero admin address. (66ms)
 ```
 
-
 ## Roadmap
 
 - [ ] Come up with a roadmap.
-
 
 ## Contact
 

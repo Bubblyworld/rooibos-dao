@@ -26,4 +26,3 @@ jobs:
         run: |
           npx truffle test
           cd app && npm run test && cd -
-
