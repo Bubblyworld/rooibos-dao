@@ -31,15 +31,8 @@ contract RooibosDao is Initializable, GovernorUpgradeable,
         __Governor_init("RooibosDao");
         __GovernorVotes_init(_token);
         __GovernorCountingSimple_init();
-        __GovernorVotes_init(_token); // Repeat?
+        __GovernorVotes_init(_token);
         __GovernorVotesQuorumFraction_init(4); // 4% required for quorum
-    }
-
-    // Function for creating proposal
-    // Function for adjusting quorum fraction
-
-    function adjustQuorum(uint256 quorumIn) internal {
-
     }
 
     /******************
