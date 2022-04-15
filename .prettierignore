@@ -1,7 +1,10 @@
+*.html
+*.sol
 node_modules
 build
 app/src/contracts
 .DS_Store
 .openzeppelin
-contracts/artifacts/
-.deps/
+contracts/artifacts
+*.json
+*.css
